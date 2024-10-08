@@ -2,6 +2,10 @@
 
 Welcome to ExamMaster, a secure and focused exam-taking experience! 🖥️ Test your knowledge without distractions in our full-screen environment.
 
+[![Walkthrough of My Quiz App Project](https://img.youtube.com/vi/K1LpFdv5gGY/0.jpg)](https://www.youtube.com/watch?v=K1LpFdv5gGY)
+
+## ☝️ (Video) Click on the image above for a walkthrough of My Quiz App Project 
+
 ## 🌟 Features
 
 - 🖥️ Full-screen exam mode
