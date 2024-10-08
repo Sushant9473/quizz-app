@@ -26,13 +26,13 @@ Welcome to ExamMaster, a secure and focused exam-taking experience! 🖥️ Test
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/exammaster.git
+   git clone https://github.com/yourusername/quizz-app.git
    ```
 
 2. Install dependencies:
 
    ```
-   cd exammaster
+   cd quizz-app
    npm install
    ```
 
