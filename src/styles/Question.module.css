@@ -1,0 +1,244 @@
+.questionContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.timer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #555;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.questionTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.questionText {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #32425b;
+}
+
+.hint {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #475d7f;
+}
+
+.hintButton {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  background-color: #ff4081;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hintButton:hover {
+  background-color: #f50057;
+  transform: translateY(-2px);
+}
+
+.answerButton {
+  padding: 14px;
+  background-color: #e8f0fe;
+  color: #333;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.1s ease,
+    color 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.answerButton:hover {
+  background-color: #d0e0fc;
+  border-color: #90caf9;
+}
+
+.selected {
+  background-color: #c5cae9;
+  color: #1a237e;
+  border-color: #7986cb;
+}
+
+.correct {
+  background-color: #81c784;
+  color: #ffffff;
+  border-color: #66bb6a;
+}
+
+.incorrect {
+  background-color: #e57373;
+  color: #ffffff;
+  border-color: #ef5350;
+}
+
+.submitButton {
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.1s ease;
+  margin-top: 20px;
+  border: none;
+}
+
+.submitButton:hover {
+  background-color: #1976d2;
+  transform: translateY(-3px);
+}
+
+.feedback {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  width: 60%;
+  max-width: 300px;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback.correct {
+  background-color: #28a745;
+  border: 1px solid #1e7e34;
+}
+
+.feedback.incorrect {
+  background-color: #dc3545;
+  border: 1px solid #c82333;
+}
+
+.feedback.animate {
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.answerOptions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answerButton {
+  padding: 14px;
+  background-color: #e8f0fe;
+  color: #333;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.1s ease,
+    color 0.3s ease-in-out;
+  border: 2px solid transparent;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.answerButton:hover {
+  background-color: #d0e0fc;
+  border-color: #90caf9;
+}
+
+.selected {
+  background-color: #c5cae9;
+  color: #1a237e;
+  border-color: #7986cb;
+}
+
+.correct {
+  background-color: #78d67b;
+  color: #ffffff;
+}
+
+.incorrect {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.warningModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.warningContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.warningContent h2 {
+  color: #ff4444;
+}
+
+.warningContent button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.warningContent button:hover {
+  background-color: #45a049;
+}

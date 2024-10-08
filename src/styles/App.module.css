@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow: auto; 
+}
+
+.app {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    background: linear-gradient(to bottom, #e6e6eb, #cdf8fa); 
+    color: #333; 
+    overflow: hidden;
+}
+
+.app.light {
+    color: #333;
+}
+
+.app.dark {
+    background: linear-gradient(to bottom, #343a40, #212529); 
+    color: #f8f9fa; 
+}
+
+.title.dark, .error.dark, .userIcon.dark, .button.dark, .input.dark, .select.dark {
+    color: #f8f9fa;
+}
+
+.button.dark {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button.dark:hover {
+    background-color: #5a6268;
+}
+
+.input.dark, .select.dark {
+    background: #495057;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+.input.dark:focus, .select.dark:focus {
+    border-color: #ced4da;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.error {
+    color: #d9534f;
+    text-align: center;
+}
+
+.topRightButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.userIcon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #6c757d;
+    transition: transform 0.2s ease;
+    padding: 10px;
+}
+
+.userIcon:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: #e91e63;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: #c2185b;
+}
+
+.input, .select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    background: #fff;
+    color: #6200ea;
+    border: 2px solid #e91e63;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input:focus, .select:focus {
+    border-color: #c2185b;
+}

@@ -1,0 +1,99 @@
+.highScores {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  max-width: 600px;
+  width: 80%;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.highScores.dark {
+  background-color: #2c2f33;
+  color: #f0f4f8;
+  border: 1px solid #444;
+}
+
+.highScores h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.highScores.dark h2,
+.highScores.dark .difficultyName {
+  color: #f0f4f8;
+}
+
+.scoreList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scoreItem {
+  margin: 20px 0;
+  font-size: 1.2em;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s, color 0.3s;
+}
+
+.highScores.dark .scoreItem {
+  background: #3a3d42;
+  color: #f0f4f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.difficultyName {
+  font-weight: bold;
+  color: #007bff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.highScores.dark .difficultyName {
+  color: #66ccff;
+}
+
+.score {
+  margin-left: 10px;
+  color: #ff6b6b;
+}
+
+.previousScoresList {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.previousScore {
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.highScores.dark .previousScore {
+  color: #ccc;
+}
+
+.scoreItem:hover {
+  background: #e8f0fe;
+  color: #1a237e;
+}
+
+.highScores.dark .scoreItem:hover {
+  background: #40444b;
+  color: #e8f0fe;
+}
+
+.highScores,
+.scoreItem,
+.highScores.dark .scoreItem {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
