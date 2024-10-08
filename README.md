@@ -56,8 +56,6 @@ Welcome to ExamMaster, a secure and focused exam-taking experience! 🖥️ Test
 
 ## 🌟 Bonus Features
 
-- ✅ Confirmation message before starting the exam
-- 📤 Manual "Submit Exam" button
 - 📊 Basic report showing exam status (completed or terminated)
 - 🔄 Option to reset and restart the exam
 
